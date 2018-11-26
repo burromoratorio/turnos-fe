@@ -6,8 +6,8 @@ export default {
       icon: 'icon-speedometer',
     },
     {
-      name: 'Publico',
-      url: '/pages/login',
+      name: 'Obras Sociales',
+      url: '/dashboard',
       icon: 'icon-speedometer',
     },
 

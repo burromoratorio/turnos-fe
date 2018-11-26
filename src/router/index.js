@@ -9,7 +9,7 @@ const Profesionales = () => import('@/views/profesionales/profesionales')
 
 const Login = () => import('@/views/pages/Login')
 
-const Principal = () => import('@/views/publico/principal')
+
 
 
 Vue.use(Router)
@@ -21,7 +21,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/pages/principal',
+      redirect: '/dashboard',
       name: 'Home',
       component: DefaultContainer,
       children: [
@@ -44,7 +44,7 @@ export default new Router({
         {
           path: 'principal',
           name: 'Principal',
-          component: Principal
+          component: Profesionales
         },       
         {
           path: 'login',
