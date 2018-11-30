@@ -6,8 +6,8 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 
 // Views
 const Profesionales = () => import('@/views/profesionales/profesionales')
-
 const Login = () => import('@/views/pages/Login')
+const Turnos = () => import('@/views/turnos/Turnos')
 
 
 
@@ -30,6 +30,11 @@ export default new Router({
           name: 'Dashboard',
           component: Profesionales
         },
+        {
+          path: '/turnos',
+          name: 'Turnos',
+          component: Turnos
+        }
       ]
     },
     {
@@ -52,6 +57,7 @@ export default new Router({
           component: Login
         },
       ]
-    }
+    },
+    
   ]
 })
